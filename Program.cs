@@ -1,4 +1,6 @@
-﻿Console.Write("Enter first input: "); 
+﻿
+// This project added 2 numbers
+Console.Write("Enter first input: "); 
 string firstInput = Console.ReadLine();
 Console.Write("Enter second input: ");
 string secondInput = Console.ReadLine();
