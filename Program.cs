@@ -1,7 +1,7 @@
 ﻿
 Console.WriteLine("Tub sonlarni aniqlovchi loyixa: "); // TUB SON => o`ziga va birga bo`linuvchi son
 
-Console.Write("Enter a number: ");
+            Console.Write("Enter a number: ");
     string userInput = Console.ReadLine();
     int userNumber = Convert.ToInt32(userInput);
 
