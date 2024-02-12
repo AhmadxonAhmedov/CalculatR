@@ -1,22 +1,15 @@
-﻿
-Console.WriteLine("Tub sonlarni aniqlovchi loyixa: "); // TUB SON => o`ziga va birga bo`linuvchi son
-
-            Console.Write("Enter a number: ");
-    string userInput = Console.ReadLine();
-    int userNumber = Convert.ToInt32(userInput);
-
-      for (int i = 2; i < userNumber; i++ )
-         {
-           int sum = 0;
-            for (int j = 1; j <= i; j++)
+﻿Console.WriteLine("Fibanaci raqamni aniqlaydigan loyixa: "); // 10 ning fibonacilari => 1, 2, 3, 5, 8
+Console.Write("Enter a number: ");
+            string userStrInput = Console.ReadLine();
+            int userInput = Convert.ToInt32(userStrInput);
+            int num1 = 0; int num2 = 1; int result = 0;
+            for(int i = 0; i < userInput; i++)
             {
-                 if(i % j == 0) 
+                result = num1 + num2; // result = 1;2;3;5;8;
+                num1 = num2; //num1 = 1;2;3;5
+                num2 = result;//1;2;3;5;8;
+                if(result <= userInput)
                 {
-                     sum++;
-                }
-                }
-                if(sum == 2)
-                {
-                    Console.WriteLine(i);
+                    Console.WriteLine(result);
                 }
             }
